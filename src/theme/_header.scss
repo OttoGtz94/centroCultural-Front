@@ -1,0 +1,28 @@
+header {
+	background-image: url('../images/header.jpg');
+	width: 100%;
+	max-width: 1366px;
+	height: 397px;
+	text-align: center;
+	display: flex;
+	justify-content: flex-end;
+	.titulos {
+		// background-color: #a3ae;
+		width: 75%;
+		padding: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		h1 {
+			font-size: 70px;
+			color: #b99741;
+			width: 100%;
+			text-shadow: -5px -5px 10px #202020;
+		}
+		h2 {
+			font-size: 40px;
+			color: #a3ae9a;
+			width: 100%;
+			text-shadow: -5px -5px 10px #202020;
+		}
+	}
+}
