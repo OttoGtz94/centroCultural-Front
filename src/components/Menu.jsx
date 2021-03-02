@@ -1,52 +1,37 @@
-import React from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../images/logo.png';
+import ScrollContext from '../hooks/scrollContext';
 
-const Menu = ({ sticky, referencia }) => {
-	// state
-	// const [scroll, setScroll] = useState(false);
+const Menu = () => {
+	const scrollContext = useContext(ScrollContext);
+	const {
+		scroll,
+		activaSticky,
+		desactivaSticky,
+	} = scrollContext;
+	const navRef = useRef(0);
 
-	// // ref
-	// const navRef = useRef(0);
-
-	// const scrollHandler = () => {
-	// 	// const valorScroll = document.documentElement.scrollTop;
-	// 	const valorRef =
-	// 		navRef.current.ownerDocument.scrollingElement.scrollTop;
-	// 	// console.log(valorScroll);
-	// 	// console.log(navRef);
-	// 	// console.log(
-	// 	// 	navRef.current.ownerDocument.scrollingElement.scrollTop,
-	// 	// );
-	// 	// console.log(
-	// 	// 	navRef.current.ownerDocument.scrollingElement
-	// 	// 		.scrollHeight,
-	// 	// );
-	// 	if (valorRef > 397) {
-	// 		setScroll(true);
-	// 	} else {
-	// 		setScroll(false);
-	// 	}
-	// };
-	// useEffect(() => {
-	// 	window.addEventListener('scroll', scrollHandler);
-	// 	// const nav = document.querySelector('#nav');
-	// 	// nav.addEventListener('scroll', scrollHandler);
-	// 	// if (scroll) {
-	// 	// 	alert('Scroll top');
-	// 	// }
-	// 	// console.log(
-	// 	// 	navRef.current.ownerDocument.scrollingElement
-	// 	// 		.clientHeight,
-	// 	// );
-	// }, [scroll]);
+	const scrollHandler = () => {
+		// const valorScroll = document.documentElement.scrollTop;
+		const valorRef =
+			navRef.current.ownerDocument.scrollingElement.scrollTop;
+		if (valorRef > 397) {
+			activaSticky();
+		} else {
+			desactivaSticky();
+		}
+	};
+	useEffect(() => {
+		window.addEventListener('scroll', scrollHandler);
+		// eslint-disable-next-line
+	}, [scroll]);
 
 	return (
 		<nav
 			id='nav'
-			ref={referencia}
-			// className={scroll ? 'navSticky' : null}
-			className={sticky}>
+			ref={navRef}
+			className={scroll ? 'navSticky' : null}>
 			<NavLink to='/home' className='navLogo'>
 				<img src={Logo} alt='logo' />
 			</NavLink>
