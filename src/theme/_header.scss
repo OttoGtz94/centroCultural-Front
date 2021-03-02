@@ -1,14 +1,15 @@
-header {
-	background-image: url('../images/header.jpg');
+.header {
+	// background-image: url('../images/header.jpg');
 	width: 100%;
 	max-width: 1366px;
 	height: 397px;
 	text-align: center;
-	display: flex;
-	justify-content: flex-end;
+	// display: flex;
+	// justify-content: flex-end;
 	.titulos {
 		// background-color: #a3ae;
 		width: 75%;
+		margin: 0 auto;
 		padding: 30px;
 		display: flex;
 		flex-wrap: wrap;
