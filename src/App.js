@@ -12,6 +12,7 @@ import Header from './components/Header';
 import Menu from './components/Menu';
 import Home from './components/page1/Home';
 import Footer from './components/Footer';
+import ScrollBotton from './components/ScrollBotton';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 				<Router>
 					<Header />
 					<Menu />
+
 					<Switch>
 						<Route exact path='/' component={Home}></Route>
 						<Route
@@ -27,6 +29,7 @@ function App() {
 							path='/home'
 							component={Home}></Route>
 					</Switch>
+					<ScrollBotton />
 					<Footer />
 				</Router>
 			</ScrollState>
