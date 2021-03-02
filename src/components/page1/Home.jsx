@@ -10,7 +10,7 @@ const Home = () => {
 	const scrollContext = useContext(ScrollContext);
 	const { scroll } = scrollContext;
 	return (
-		<div
+		<section
 			id='home'
 			className={scroll ? `pagina saltoPagina` : 'pagina'}>
 			<Frase />
@@ -21,7 +21,7 @@ const Home = () => {
 				style={{
 					height: '900px',
 				}}></div> */}
-		</div>
+		</section>
 	);
 };
 

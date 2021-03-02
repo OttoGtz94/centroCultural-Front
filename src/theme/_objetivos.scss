@@ -1,0 +1,29 @@
+.objetivos {
+	background-image: url('../images/objetivo.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	// height: 1000px;
+
+	h1 {
+		font-size: 50px;
+		font-weight: 700;
+		color: #82a58b;
+	}
+	.objetivo {
+		width: 100%;
+		.circuloObjetivo {
+			background-color: #114c4b;
+			width: 30px;
+			height: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+
+			span {
+				color: #a3ae9a;
+			}
+		}
+	}
+}

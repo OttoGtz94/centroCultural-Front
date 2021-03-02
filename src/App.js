@@ -11,6 +11,7 @@ import ScrollState from './hooks/scrollState';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Home from './components/page1/Home';
+import Objetivos from './components/page2/Objetivos';
 import Footer from './components/Footer';
 import ScrollBotton from './components/ScrollBotton';
 
@@ -28,6 +29,11 @@ function App() {
 							exact
 							path='/home'
 							component={Home}></Route>
+						<Route
+							exact
+							path='/objetivos'
+							component={Objetivos}
+						/>
 					</Switch>
 					<ScrollBotton />
 					<Footer />
