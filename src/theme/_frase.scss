@@ -1,0 +1,32 @@
+.contenedorFrase {
+	width: 100%;
+	// background-color: red;
+	display: flex;
+	justify-content: flex-end;
+	padding: 30px;
+	div {
+		width: 50%;
+		// background-color: blue;
+		text-align: right;
+		padding: 5px 30px;
+		// box-shadow: 3px -5px 15px black;
+		.iconComilla {
+			color: #185454;
+			font-size: 40px;
+			//
+		}
+		.frase,
+		.autorFrase {
+			font-family: 'Aguafina Script', cursive;
+			color: #185454;
+			margin: 20px;
+			text-shadow: 3px -5px 5px #a4abc8;
+		}
+		.frase {
+			font-size: 35px;
+		}
+		.autorFrase {
+			font-size: 25px;
+		}
+	}
+}

@@ -1,9 +1,12 @@
 import React from 'react';
+import Frase from './Frase';
+import AboutUs from './AboutUs';
 
 const Home = () => {
 	return (
-		<div>
-			<h1>home</h1>
+		<div id='home' className='pagina'>
+			<Frase />
+			<AboutUs />
 		</div>
 	);
 };
