@@ -1,7 +1,9 @@
 import React, { useContext } from 'react';
 import Frase from './Frase';
-import AboutUs from './AboutUs';
 import ScrollContext from '../../hooks/scrollContext';
+// Components
+import AboutUs from './AboutUs';
+import Servicios from './Servicios';
 
 const Home = () => {
 	const scrollContext = useContext(ScrollContext);
@@ -12,6 +14,11 @@ const Home = () => {
 			className={scroll ? `pagina saltoPagina` : 'pagina'}>
 			<Frase />
 			<AboutUs />
+			<Servicios />
+			{/* <div
+				style={{
+					height: '900px',
+				}}></div> */}
 		</div>
 	);
 };
