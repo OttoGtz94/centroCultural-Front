@@ -11,6 +11,7 @@ import ScrollState from './hooks/scrollState';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Home from './components/page1/Home';
+import Footer from './components/Footer';
 
 function App() {
 	return (
@@ -26,6 +27,7 @@ function App() {
 							path='/home'
 							component={Home}></Route>
 					</Switch>
+					<Footer />
 				</Router>
 			</ScrollState>
 		</div>

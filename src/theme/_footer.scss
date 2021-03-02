@@ -1,0 +1,32 @@
+footer {
+	background-color: #114c4b;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: #a3ae9a;
+	text-align: center;
+	.contactoFooter {
+		// background-color: green;
+		width: 50%;
+		padding: 15px;
+		p {
+			font-size: 25px;
+		}
+		a {
+			font-size: 35px;
+			color: #a3ae9a;
+		}
+	}
+	.mensajeFooter {
+		// background-color: pink;
+		padding: 15px;
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		p {
+			font-size: 25px;
+		}
+	}
+}

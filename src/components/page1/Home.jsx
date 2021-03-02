@@ -4,6 +4,7 @@ import ScrollContext from '../../hooks/scrollContext';
 // Components
 import AboutUs from './AboutUs';
 import Servicios from './Servicios';
+import Donaciones from './Donaciones';
 
 const Home = () => {
 	const scrollContext = useContext(ScrollContext);
@@ -15,6 +16,7 @@ const Home = () => {
 			<Frase />
 			<AboutUs />
 			<Servicios />
+			<Donaciones />
 			{/* <div
 				style={{
 					height: '900px',
