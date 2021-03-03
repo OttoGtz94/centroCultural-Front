@@ -1,0 +1,115 @@
+.contacto {
+	width: 100%;
+	// background-color: blue;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	h3 {
+		font-size: 50px;
+		font-weight: 700;
+		color: #82a58b;
+		width: 100%;
+	}
+	.formularioContacto {
+		background-color: #dee0e1;
+		margin: 25px auto;
+		width: 70%;
+		text-align: center;
+		padding: 20px;
+		box-shadow: 0px 0px 15px black;
+		border-radius: 2px;
+		margin-bottom: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		input,
+		textarea {
+			width: 70%;
+			background-color: transparent;
+			margin: 20px 20px;
+			padding-left: 15px;
+			color: #a3ae9a;
+			font-size: 20px;
+			font-weight: 600;
+			border: 2px solid transparent;
+			border-bottom: 2px solid #114c4b;
+			&:focus {
+				border: 2px solid #114c4b;
+				border-radius: 5px;
+			}
+		}
+		input {
+			height: 40px;
+		}
+		textarea {
+			max-width: 70%;
+			min-width: 70%;
+			max-height: 200px;
+			min-height: 200px;
+		}
+		button {
+			width: 70%;
+			height: 50px;
+			border-radius: 10px;
+			background-color: #114c4b;
+			border: 2px solid #a3ae9a;
+			color: #a3ae9a;
+			font-size: 20px;
+			font-weight: 700;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: 0.6s ease;
+			&:hover {
+				border: 2px solid #114c4b;
+				background-color: #a3ae9a;
+				color: #114c4b;
+			}
+		}
+	}
+	.contenedorIntegrantes {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.integrante {
+			background-color: #dee0e1;
+			box-shadow: 0px 0px 15px black;
+			padding: 10px;
+			margin: 15px;
+			width: 30%;
+			display: flex;
+			cursor: pointer;
+			transition: 0.5s;
+			&:hover {
+				transform: scale(1.2);
+			}
+			.foto {
+				width: 40%;
+				img {
+					width: 100%;
+					border-radius: 50%;
+				}
+			}
+			.informacion {
+				// background-color: red;
+
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				padding-left: 5px;
+				h4,
+				h5 {
+					font-size: 20px;
+					color: #7b7c7c;
+				}
+				h4 {
+					font-weight: 700;
+				}
+				h5 {
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}

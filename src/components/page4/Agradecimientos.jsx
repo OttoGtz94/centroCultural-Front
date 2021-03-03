@@ -54,7 +54,7 @@ const Agradecimientos = () => {
 					? 'pagina agradecimientos saltoPagina'
 					: 'pagina agradecimientos'
 			}>
-			<h3>Agradecimientos</h3>
+			<h3>AGRADECIMIENTOS</h3>
 			{agradecimientos.map(agradecimiento => (
 				<Agradecimiento
 					key={agradecimiento.id}

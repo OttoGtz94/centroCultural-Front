@@ -6,7 +6,8 @@ const FormularioEvidencias = () => {
 			<select
 				name='porNombre'
 				id='porNombre'
-				className='select'>
+				className='select'
+				defaultValue>
 				<option value='' key='' selected>
 					Ordenar por
 				</option>
@@ -16,10 +17,10 @@ const FormularioEvidencias = () => {
 				<option value='alfabetoAs' key='z-a'>
 					Z-A
 				</option>
-				<option value='fechaAct' key='z-a'>
+				<option value='fechaAct' key='recientes'>
 					Más recientes
 				</option>
-				<option value='fechaAnt' key='z-a'>
+				<option value='fechaAnt' key='pasadas'>
 					Más antiguos
 				</option>
 			</select>
