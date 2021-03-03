@@ -1,22 +1,15 @@
 import React from 'react';
 
-const Objetivo = () => {
+const Objetivo = ({ id, msg }) => {
 	return (
 		<div className='objetivo'>
-			<div className='circuloObjetivo'>
-				<span>1</span>
+			<div className='contenedorCirculo'>
+				<div className='circuloObjetivo'>
+					<span>{id}</span>
+				</div>
 			</div>
 			<div className='objetivoTexto'>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur
-					adipisicing elit. Odio incidunt, nesciunt esse sit
-					tenetur illum quam consectetur illo ea aperiam
-					veritatis quibusdam fuga rem non, amet, aspernatur
-					facilis atque! Ullam voluptatem adipisci iste
-					optio id laudantium numquam natus ad molestias
-					inventore animi voluptatum, distinctio porro sequi
-					quam quia, nihil nesciunt!
-				</p>
+				<p>{msg}</p>
 			</div>
 		</div>
 	);

@@ -12,17 +12,39 @@
 	}
 	.objetivo {
 		width: 100%;
-		.circuloObjetivo {
-			background-color: #114c4b;
-			width: 30px;
-			height: 30px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			border-radius: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-top: 25px;
+		padding: 10px;
+		background-color: rgba(255, 235, 205, 0.3);
+		border-radius: 5px;
+		.contenedorCirculo {
+			width: 100%;
+			.circuloObjetivo {
+				background-color: #114c4b;
+				width: 50px;
+				height: 50px;
+				margin: 10px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
 
-			span {
+				span {
+					color: #a3ae9a;
+					font-size: 20px;
+					font-weight: 700;
+				}
+			}
+		}
+
+		.objetivoTexto {
+			// width: calc(100% - 50px);
+			width: 90%;
+			p {
 				color: #a3ae9a;
+				font-size: 20px;
 			}
 		}
 	}
