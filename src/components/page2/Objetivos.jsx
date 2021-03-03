@@ -7,7 +7,7 @@ import Objetivo from './Objetivo';
 const Objetivos = () => {
 	const listaObjetivos = [
 		{
-			id: '1',
+			id: 1,
 			msg:
 				'La atención a requerimientos básicos de subsistencia en materia de alimentación, vestido o vivienda mediante la participación organizada de la población en las acciones que mejoren sus propias condiciones en beneficio de la comunidad',
 		},
