@@ -1,0 +1,109 @@
+.evidencias {
+	width: 100%;
+	// background-color: red;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	h3 {
+		font-size: 50px;
+		font-weight: 700;
+		color: #82a58b;
+		width: 100%;
+	}
+	.formEvidencias {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		.select,
+		.fecha,
+		.buscar {
+			width: 15%;
+			height: 35px;
+			background-color: transparent;
+			margin: 0 20px;
+			padding-left: 5px;
+			color: #a3ae9a;
+			font-size: 20px;
+			font-weight: 600;
+			border: 2px solid transparent;
+			border-bottom: 2px solid #114c4b;
+			&:focus {
+				border: 2px solid #114c4b;
+				border-radius: 5px;
+			}
+		}
+	}
+	.cardEvidencia {
+		background-color: rgba(17, 76, 75, 0.5);
+		width: 30%;
+		border-radius: 5px;
+		border: 3px solid #185454;
+		box-shadow: 2px -2px 5px aeffce;
+		margin: 30px auto;
+		.cardImage {
+			width: 100%;
+			position: relative;
+			// border-bottom: 3px solid #185454;
+			// background-color: red;
+			img {
+				width: 100%;
+				// filter: blur(0px) brightness(1) hue-rotate(0deg)
+				// 	grayscale(0%);
+				filter: blur(1px) brightness(0.5) hue-rotate(20deg)
+					grayscale(90%);
+			}
+			h4 {
+				color: #aeffce;
+				font-size: 25px;
+				position: absolute;
+				margin: 20px;
+				text-transform: uppercase;
+				text-shadow: 0px 0px 5px #a3ae9a;
+				top: 80px;
+				z-index: 200;
+			}
+			.iconoBook {
+				color: #aeffce;
+				margin: 20px;
+				top: 30px;
+				position: absolute;
+				font-size: 50px;
+				z-index: 200;
+			}
+			&:hover {
+				img {
+					filter: blur(1px) brightness(0.5)
+						hue-rotate(20deg) grayscale(90%);
+				}
+			}
+		}
+	}
+	.cardBody {
+		// background-color: blue;
+		width: 100%;
+		color: #fff;
+		padding: 10px;
+		h4 {
+			font-size: 22px;
+			font-weight: 300;
+			padding: 10px 0;
+			border-bottom: 2px solid #fff;
+		}
+		p {
+			margin-top: 10px;
+			font-size: 18px;
+		}
+	}
+	.cardFooter {
+		background-color: #114c4b;
+		padding: 5px;
+		text-align: right;
+		span {
+			color: #fff;
+			font-size: 15px;
+			font-weight: 200;
+		}
+	}
+}

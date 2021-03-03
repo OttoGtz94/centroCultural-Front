@@ -12,6 +12,7 @@ import Header from './components/Header';
 import Menu from './components/Menu';
 import Home from './components/page1/Home';
 import Objetivos from './components/page2/Objetivos';
+import Evidencias from './components/page3/Evidencias';
 import Footer from './components/Footer';
 import ScrollBotton from './components/ScrollBotton';
 
@@ -33,6 +34,11 @@ function App() {
 							exact
 							path='/objetivos'
 							component={Objetivos}
+						/>
+						<Route
+							exact
+							path='/evidencias'
+							component={Evidencias}
 						/>
 					</Switch>
 					<ScrollBotton />

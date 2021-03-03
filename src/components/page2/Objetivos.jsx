@@ -77,7 +77,7 @@ const Objetivos = () => {
 					? 'pagina objetivos saltoPagina'
 					: 'pagina objetivos'
 			}>
-			<h1>NUESTROS OBJETIVOS</h1>
+			<h3>NUESTROS OBJETIVOS</h3>
 			{listaObjetivos.map(objetivo => (
 				<Objetivo
 					key={objetivo.id}
