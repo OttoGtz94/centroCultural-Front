@@ -1,0 +1,82 @@
+.modalBio {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	.contenedorCerrar {
+		width: 100%;
+		// background-color: red;
+		height: 50px;
+		border-bottom: 2px solid #a3ae9a;
+		text-align: right;
+		margin-bottom: 20px;
+		.btnCerrar {
+			cursor: pointer;
+			// width: 30px;
+			// height: 30px;
+			font-size: 35px;
+			font-weight: 700;
+			color: #114c4b;
+			transition: 0.5s;
+			&:hover {
+				color: #cc060c;
+			}
+		}
+	}
+	.contenedorPerfil {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		.contenedorImg {
+			width: 25%;
+			// background-color: red;
+
+			img {
+				width: 100%;
+			}
+		}
+		.contenedorNombreTitulo {
+			width: 75%;
+			padding: 20px;
+			// background-color: blue;
+			color: #333333;
+			h3 {
+				font-size: 60px;
+				font-weight: 700;
+			}
+			h4 {
+				font-size: 30px;
+				font-weight: 300;
+			}
+		}
+	}
+	p {
+		font-size: 20px;
+		color: #a3ae9a;
+		margin-bottom: 25px;
+	}
+	.contenedorRS {
+		width: 100%;
+		text-align: center;
+		a {
+			text-decoration: none;
+			margin-right: 25px;
+			font-size: 40px;
+		}
+		.fb {
+			color: #3b5998;
+			transition: 0.5s;
+			&:hover {
+				transform: scale(1.5);
+			}
+		}
+		.twitter {
+			color: #1da1f2;
+			transition: 0.5s;
+			&:hover {
+				transform: scale(1.5);
+			}
+		}
+	}
+}

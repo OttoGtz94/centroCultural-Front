@@ -1,13 +1,33 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 // components
 import FormularioContacto from './FormularioContacto';
 import Integrantes from './Integrantes';
+import ModalBio from './Modal';
 // hooks
 import ScrollContext from '../../hooks/scrollContext';
 // imagenes
 import ImagePerfil1 from '../../images/perfil1.jpg';
 import ImagePerfil2 from '../../images/perfil2.jpg';
 import ImagePerfil3 from '../../images/perfil3.jpg';
+// materialui
+import { Modal } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles(theme => ({
+	modal: {
+		position: 'absolute',
+		width: '80%',
+		height: '500px',
+		backgroundColor: '#dee0e1',
+		border: '2px solid transparent',
+		boxShadow: '0px 0px 30px black',
+		padding: theme.spacing(2, 4, 3),
+		top: '50%',
+		left: '50%',
+		transform: 'translate(-50%, -50%)',
+		overflow: 'scroll',
+	},
+}));
 
 const Contacto = () => {
 	const integrantes = [
@@ -44,6 +64,14 @@ const Contacto = () => {
 	];
 	const scrollContext = useContext(ScrollContext);
 	const { scroll } = scrollContext;
+
+	const styles = useStyles();
+	const [modal, abrirModal] = useState(false);
+
+	// // fn para abrir o cerrar modal
+	const abrirCerraModal = () => {
+		abrirModal(!modal);
+	};
 	return (
 		<section
 			className={
@@ -59,9 +87,17 @@ const Contacto = () => {
 						nombre={integrante.nombre}
 						puesto={integrante.puesto}
 						foto={integrante.foto}
+						onClick={abrirCerraModal}
 					/>
 				))}
 				{/* <Integrantes /> */}
+				<Modal open={modal} onClose={abrirCerraModal}>
+					{/* {body} */}
+					<ModalBio
+						styleModal={styles.modal}
+						onClick={abrirCerraModal}
+					/>
+				</Modal>
 			</div>
 		</section>
 	);

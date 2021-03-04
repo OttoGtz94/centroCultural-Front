@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Integrantes = ({ nombre, puesto, foto }) => {
+const Integrantes = ({ nombre, puesto, foto, onClick }) => {
 	return (
-		<div className='integrante'>
+		<div className='integrante' onClick={onClick}>
 			<div className='foto'>
 				<img src={foto} alt='perfil' />
 			</div>
