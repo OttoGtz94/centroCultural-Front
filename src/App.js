@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 // HOOKS
 import ScrollState from './hooks/scrollState';
+import BiografiaState from './hooks/biografiaState';
 
 // COMPONENTES
 import Header from './components/Header';
@@ -47,11 +48,13 @@ function App() {
 							path='/agradecimientos'
 							component={Agradecimientos}
 						/>
-						<Route
-							exact
-							path='/contacto'
-							component={Contacto}
-						/>
+						<BiografiaState>
+							<Route
+								exact
+								path='/contacto'
+								component={Contacto}
+							/>
+						</BiografiaState>
 					</Switch>
 					<ScrollBotton />
 					<Footer />
