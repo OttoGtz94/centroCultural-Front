@@ -1,10 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookReader } from '@fortawesome/free-solid-svg-icons';
-// imagen
-import ImageEvidencia from '../../images/evidencia3.png';
 
-const Evidencia = () => {
+const Evidencia = ({
+	titulo,
+	titulo2,
+	fechaRealizada,
+	urlImage,
+	descripcion,
+	fechaPublicada,
+}) => {
 	return (
 		<div className='cardEvidencia'>
 			<div className='cardImage'>
@@ -12,20 +17,18 @@ const Evidencia = () => {
 					className='iconoBook'
 					icon={faBookReader}
 				/>
-				<h4>Libro Club 20-15-2016</h4>
-				<img src={ImageEvidencia} alt='evidencia' />
+				<h4>
+					{titulo2}
+					<span>{fechaRealizada}</span>
+				</h4>
+				<img src={urlImage} alt='evidencia' />
 			</div>
 			<div className='cardBody'>
-				<h4>Lectura en voz alta</h4>
-				<p>
-					Centro Hannah Arendt A.C., en conjunto con la
-					cooperativa Allepetlalli te ofrece servicios de
-					Club de Lecturas, un espacio en el que podrás leer
-					revistas, artículos y libros.
-				</p>
+				<h4>{titulo}</h4>
+				<p>{descripcion}</p>
 			</div>
 			<div className='cardFooter'>
-				<span>08-Jun-2016</span>
+				<span>{fechaPublicada}</span>
 			</div>
 		</div>
 	);

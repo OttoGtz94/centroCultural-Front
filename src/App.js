@@ -7,6 +7,7 @@ import {
 // HOOKS
 import ScrollState from './hooks/scrollState';
 import BiografiaState from './hooks/biografiaState';
+import EvidenciaState from './hooks/evidenciaState';
 
 // COMPONENTES
 import Header from './components/Header';
@@ -38,11 +39,13 @@ function App() {
 							path='/objetivos'
 							component={Objetivos}
 						/>
-						<Route
-							exact
-							path='/evidencias'
-							component={Evidencias}
-						/>
+						<EvidenciaState>
+							<Route
+								exact
+								path='/evidencias'
+								component={Evidencias}
+							/>
+						</EvidenciaState>
 						<Route
 							exact
 							path='/agradecimientos'
